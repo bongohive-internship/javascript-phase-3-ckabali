@@ -33,3 +33,22 @@ for (var x = 0; x < 1000; x++)
     }
 }
 console.log(sum);
+
+
+function assignGrade(score) {
+    if (score &gt; 90) {
+        return 'A';
+    } else if (score &gt; 80) {
+        return 'B';
+    } else if (score &gt; 70) {
+        return 'C';
+    } else if (score &gt; 65) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+console.log('You got a ' + assignGrade(95));
+console.log('You got a ' + assignGrade(65));
+
